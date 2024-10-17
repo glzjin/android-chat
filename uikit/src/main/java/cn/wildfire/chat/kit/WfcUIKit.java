@@ -153,10 +153,10 @@ public class WfcUIKit implements AVEngineKit.AVEngineCallback, OnReceiveMessageL
 
     private void initWFClient(Application application) {
         ChatManager.init(application, Config.IM_SERVER_HOST);
-        ChatManager.Instance().setProxyInfo(new Socks5ProxyInfo("", "192.168.101.146", 30486, "glzjin", "114514"));
+        ChatManager.Instance().setProxyInfo(new Socks5ProxyInfo("im.medusee.cn", "192.168.101.146", 30486, "glzjin", "114514"));
         try {
             ChatManagerHolder.gChatManager = ChatManager.Instance();
-            ChatManagerHolder.gChatManager.setProxyInfo(new Socks5ProxyInfo("", "192.168.101.146", 30486, "glzjin", "114514"));
+            ChatManagerHolder.gChatManager.setProxyInfo(new Socks5ProxyInfo("im.medusee.cn", "192.168.101.146", 30486, "glzjin", "114514"));
             ChatManagerHolder.gChatManager.startLog();
             ChatManagerHolder.gChatManager.setSendLogCommand(Config.SEND_LOG_COMMAND);
             ChatManagerHolder.gChatManager.addOnReceiveMessageListener(this);
