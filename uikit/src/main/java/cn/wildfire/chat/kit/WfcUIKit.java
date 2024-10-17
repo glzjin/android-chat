@@ -8,7 +8,7 @@ import android.app.Activity;
 import android.app.Application;
 import android.app.PendingIntent;
 import android.content.Context;
-import android.content.Intent;Set
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.media.AudioManager;
 import android.net.Uri;
