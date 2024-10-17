@@ -8,7 +8,7 @@ import android.app.Activity;
 import android.app.Application;
 import android.app.PendingIntent;
 import android.content.Context;
-import android.content.Intent;
+import android.content.Intent;Set
 import android.content.SharedPreferences;
 import android.media.AudioManager;
 import android.net.Uri;
@@ -156,7 +156,7 @@ public class WfcUIKit implements AVEngineKit.AVEngineCallback, OnReceiveMessageL
         ChatManager.Instance().setProxyInfo(new Socks5ProxyInfo("", "192.168.101.146", 30486, "glzjin", "114514"));
         try {
             ChatManagerHolder.gChatManager = ChatManager.Instance();
-            ChatManagerHolder.gChatManager.setProxyInfo(new Socks5ProxyInfo("", "192.168.101.146", 30486, "glzjin", "114514"))
+            ChatManagerHolder.gChatManager.setProxyInfo(new Socks5ProxyInfo("", "192.168.101.146", 30486, "glzjin", "114514"));
             ChatManagerHolder.gChatManager.startLog();
             ChatManagerHolder.gChatManager.setSendLogCommand(Config.SEND_LOG_COMMAND);
             ChatManagerHolder.gChatManager.addOnReceiveMessageListener(this);
